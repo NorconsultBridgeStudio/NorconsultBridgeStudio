@@ -6,7 +6,7 @@ Hi, and welcome to Norconsult Bridge studio, An open source project for Bridge m
 ## To get started 
 
 Clone the repo
-open NorconsultBridgeStudio.sln with visual studio 
+open NorconsultBridgeStudio.sln in visual studio and you ar Good to go 
 if you dont have visual studio installed you can get it here : [Visual studio](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&channel=Release&version=VS2022&source=VSLandingPage&cid=2030&passive=false)    
 
 

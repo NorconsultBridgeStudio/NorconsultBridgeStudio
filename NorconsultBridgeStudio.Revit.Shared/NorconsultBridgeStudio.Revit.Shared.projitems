@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects Condition="'$(MSBuildVersion)' == '' Or '$(MSBuildVersion)' &lt; '16.0'">$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>f0335e3a-af6c-475d-89ad-fef6e61ac1dd</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>NorconsultBridgeStudio.Revit.Shared</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)BridgeModelling\Commands\" />
+    <Folder Include="$(MSBuildThisFileDirectory)BridgeModelling\Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)BridgeModelling\ViewModels\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Core\Extensions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Core\Exceptions\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Core\Utils\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Core\Startup\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\CommandAvailability\AlwaysAvailability.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\CommandAvailability\AvailabilityUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\CommandAvailability\ProjectAvailability.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\CommandAvailability\ProjectAndModelViewAvailability.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\CommandAvailability\ProjectAndSectionViewAvailability.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Commands\AboutCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Commands\AdaptiveCrossSectionCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Commands\AlignmentByPointsCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Commands\CreateSuperStructureCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Commands\HelpCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Commands\PlaceSuperStructureCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Commands\SectionAtStartCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Models\AdaptiveCrossSectionModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Models\AlignmentByPointsModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Models\CreateSuperStructureModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Models\PlaceSuperStructureModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Models\RevitElementModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Utils\AlignmentLoadOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Utils\ExtensibleStorageUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Utils\SuperstructureLoadOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Utils\CrossSectionLoadOptions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Utils\ViewUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\ViewModels\AboutViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\ViewModels\SingleComboboxViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Views\AboutView.xaml.cs">
+      <DependentUpon>AboutView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)BridgeModelling\Views\SingleComboboxView.xaml.cs">
+      <DependentUpon>SingleComboboxView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Exceptions\NorconsultBridgeStudioError.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Exceptions\ExceptionHandler.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Exceptions\WarningSwallower.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Extensions\DocumentExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Extensions\ElementExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Extensions\GeometryElementExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Extensions\PlaneExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Extensions\RibbonPanelExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Extensions\SelectionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Extensions\TransactionExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Extensions\ViewExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Extensions\XYZExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Interfaces\INorconsultBridgeStudioCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Startup\Events.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Utils\NotifierBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Startup\Ribbon.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Utils\ActionCommand.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Utils\NorconsultBridgeStudioErrorDialog.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Utils\Constants.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Utils\Filters.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Utils\MathUtils.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Utils\Paths.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Core\Utils\ResourceUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="$(MSBuildThisFileDirectory)BridgeModelling\Views\AboutView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="$(MSBuildThisFileDirectory)BridgeModelling\Views\SingleComboboxView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+</Project>

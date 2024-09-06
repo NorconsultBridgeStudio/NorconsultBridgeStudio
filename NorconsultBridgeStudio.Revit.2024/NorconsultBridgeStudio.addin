@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<RevitAddIns>
+	<AddIn Type="Application">
+		<Name>NorconsultBridgeStudio</Name>
+		<Assembly>NorconsultBridgeStudio.Revit.2024.dll</Assembly>
+		<AddInId>CFD24CD9-89DF-4DC2-946C-6216D91FDD62</AddInId>
+		<FullClassName>NorconsultBridgeStudio.Revit.Core.App</FullClassName>
+		<VendorId>Norconsult</VendorId>
+		<VendorDescription>Norconsult Bridge Modelling Team, Team Bruvit</VendorDescription>
+	</AddIn>
+</RevitAddIns>

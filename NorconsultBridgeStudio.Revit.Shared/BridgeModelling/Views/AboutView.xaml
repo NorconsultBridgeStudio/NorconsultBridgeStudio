@@ -1,0 +1,27 @@
+﻿<Window x:Class="NorconsultBridgeStudio.Revit.BridgeModelling.Views.AboutView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:local="clr-namespace:NorconsultBridgeStudio.Revit.BridgeModelling.Views"
+             mc:Ignorable="d" 
+             Height="300" Width="428" Foreground="Black" Background="Gainsboro" Title="About Norconsult Bridge Studio" KeyDown="Window_KeyDown" ResizeMode="NoResize">
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top" Margin="2" LastChildFill="True">
+            <Label Content="Version" Width="50" DockPanel.Dock="Left" VerticalContentAlignment="Center"/>
+            <Label Content="{Binding Version}" Width="Auto" DockPanel.Dock="Left" VerticalContentAlignment="Center"/>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Top" Margin="2" LastChildFill="True">
+            <Label Content="Help" Width="50"  DockPanel.Dock="Left" VerticalContentAlignment="Center"/>
+            <Label VerticalContentAlignment="Center">           
+                <Hyperlink NavigateUri="www.bimforbridges.com" RequestNavigate="Hyperlink_RequestNavigate">
+                    www.bimforbridges.com
+                </Hyperlink>
+            </Label>
+        </DockPanel>
+        <DockPanel DockPanel.Dock="Top" Margin="2" LastChildFill="True">
+            <Label Content="License" Width="50"  DockPanel.Dock="Left" VerticalContentAlignment="Top"/>
+            <TextBox HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Visible" IsReadOnly="True" TextWrapping="Wrap" Text="{Binding LicenseText}"/>
+        </DockPanel>
+    </DockPanel>
+</Window>

@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/NorconsultBridgeStudio.Revit.2024/.vs
+/NorconsultBridgeStudio.Revit.2024/bin/Debug
+/NorconsultBridgeStudio.Revit.2024/obj
+/BruvitOpen.Revit.2024/obj

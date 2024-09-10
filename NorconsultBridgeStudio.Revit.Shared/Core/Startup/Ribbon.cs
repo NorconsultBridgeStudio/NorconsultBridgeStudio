@@ -38,6 +38,8 @@ namespace NorconsultBridgeStudio.Revit.Core.Startup
             PushButtonData buttonDataHelp = CreatePushButtonData(new HelpCommand());
             panel.AddPulldownButton(new List<PushButtonData> { buttonDataAbout, buttonDataHelp }, "SplitAbout", "About", "about");
 
+            panel.AddLargePushButton(new OrientToCurveCommand());
+
         }
         public static PushButtonData CreatePushButtonData(INorconsultBridgeStudioCommand command)
         {
@@ -46,7 +48,6 @@ namespace NorconsultBridgeStudio.Revit.Core.Startup
                 ToolTip = command.ToolTip,
                 AvailabilityClassName = command.CommandAvailability
             };
-
 
             BitmapImage image = ResourceUtils.GetImageOrDefault(command.IconName);
             buttonData.LargeImage = image;

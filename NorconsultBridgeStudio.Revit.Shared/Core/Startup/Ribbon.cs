@@ -47,6 +47,7 @@ namespace NorconsultBridgeStudio.Revit.Core.Startup
                 AvailabilityClassName = command.CommandAvailability
             };
 
+
             BitmapImage image = ResourceUtils.GetImageOrDefault(command.IconName);
             buttonData.LargeImage = image;
 
